@@ -1,0 +1,49 @@
+/* footer section */
+
+
+.fa{
+    font-size:2em !important;
+}
+
+footer .fa .fa-twitter{
+    color:rgb(2, 151, 250);
+}
+
+footer .fa .fa-instagram{
+    color:rgb(250, 2, 97);
+}
+
+footer .footer-text{
+    margin-top:20px;
+    text-align: center;
+}
+
+.about-section{
+    padding-top:40px !important;
+}
+
+.about-section h2{
+    color:#000;
+    font-size:5em;
+}
+.about-section p{
+    color:#000;
+}
+
+img.w3-margin-top {
+
+
+}
+
+div.w3-display-middle.w3-center {
+  text-align: center;
+}
+
+div.#about-section {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}

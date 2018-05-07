@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<title>Live Chat Support</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<style>
+body, html {
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/pictures/Untitled-1.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+
+    <!-- Navigation -->
+    <!-- Links (sit on top) -->
+    div class="w3-container" id="HOME">
+<div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+          <div class="w3-col s3">
+            <a href="#" class="w3-button w3-block w3-black">HOME</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#Services" class="w3-button w3-block w3-black">SERVICES</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+          </div>
+        </div>
+      </div>
+            </div>
+
+      <!-- Header with image -->
+      <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+          <span class="w3-tag">Open from 8:30pm to 5:30am</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white" style="font-size:200px"><font face="trebuche MT" color="white"> LIVE CHAT SUPPORT</font></span>
+          <p><font face="trebuche MT" color="white" size="14">Serve Customers Around the Globe!</font></p>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+          <span class="w3-text-white">Jan 15, 2018</span>
+        </div>
+      </header>
+
+
+{{ content }}
+
+
+    <!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.chatsupport.com/w3css/default.asp" title="Chat Support Services" target="_blank" class="w3-hover-text-green">click-to-chat</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+
+
+// Tabbed Menugit
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
